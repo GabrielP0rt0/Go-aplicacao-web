@@ -37,3 +37,15 @@ func GetProdutos() []models.Produto {
 	defer db.Close()
 	return produtos
 }
+
+func PostProduto(p models.Produto) {
+	db := db.OpenDBAlura()
+
+	insertDb, err := db.Prepare("insert into produtos(nome, descricao, preco, quantidade) values($1, $2, $3, $4)")
+	if err != nil {
+		panic("#### Erro ao inserir dados no banco: " + err.Error())
+	}
+
+	insertDb.Exec(p.Nome, p.Descricao, p.Preco, p.Quantidade)
+	defer db.Close()
+}
