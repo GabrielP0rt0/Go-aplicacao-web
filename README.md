@@ -46,9 +46,11 @@
 
 ## Pré-requisitos
 
-:warning: [Go](https://medium.com/xp-inc/primeiros-passos-com-golang-1abdc60bba50)
-:warning: [Postgres](https://www.postgresql.org/download/)
-:warning: [NodeJs](https://nodejs.org/en/download)
+:warning: [GO](https://medium.com/xp-inc/primeiros-passos-com-golang-1abdc60bba50)
+
+:warning: [POSTGRES](https://www.postgresql.org/download/)
+
+:warning: [NODEJS](https://nodejs.org/en/download)
 
 
 ## Como configurar a aplicação :arrow_forward:
@@ -56,38 +58,38 @@
 Após instalado e configurado o Postgres crie um novo database chamado alura_loja:
 
 ```
-    CREATE DATABASE alura_loja
-        WITH
-        OWNER = postgres
-        ENCODING = 'UTF8'
-        LC_COLLATE = 'Portuguese_Brazil.1252'
-        LC_CTYPE = 'Portuguese_Brazil.1252'
-        TABLESPACE = pg_default
-        CONNECTION LIMIT = -1
-        IS_TEMPLATE = False;
+CREATE DATABASE alura_loja
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'Portuguese_Brazil.1252'
+    LC_CTYPE = 'Portuguese_Brazil.1252'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
 ```
 
 Após a criação de banco de dados execute o seguinte script dentro dele:
 ```
-    Create table produtos(
-        id serial primarykey,
-        nome varchar,
-        descricao varchar,
-        preco decimal,
-        quantidade int
-    )   
+Create table produtos(
+    id serial primarykey,
+    nome varchar,
+    descricao varchar,
+    preco decimal,
+    quantidade int
+)   
 ```
 
 Agora no terminal, clone o projeto dentro da sua pasta "src" - no mesmo diretório o qual o Go foi instalado.: 
 
 ```
-    git clone https://github.com/GabrielP0rt0/Go-a-linguagem-do-Google
+git clone https://github.com/GabrielP0rt0/Go-a-linguagem-do-Google
 ```
 
 Abra o projeto e execute o seguinte comando no terminal:
 
 ```
-    npm install
+npm install
 ```
 
 > Esse comando será o responsável por instalar o bootstrap, necessário para execução de nossas páginas html
