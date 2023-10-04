@@ -83,7 +83,7 @@ Create table produtos(
 Agora no terminal, clone o projeto dentro da sua pasta "src" - no mesmo diretório o qual o Go foi instalado.: 
 
 ```
-git clone https://github.com/GabrielP0rt0/Go-a-linguagem-do-Google
+git clone https://github.com/GabrielP0rt0/Go-aplicacao-web.git
 ```
 
 Abra o projeto e execute o seguinte comando no terminal:
